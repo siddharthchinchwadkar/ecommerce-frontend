@@ -8,6 +8,7 @@
 </head>
 <body>
 
+  <!-- Header -->
   <header class="header">
     <div class="logo">🛍️ Our Store</div>
 
@@ -29,15 +30,34 @@
       <div class="hamburger">☰</div>
     </div>
   </header>
- <!-- Hero Section -->
-<section class="hero">
-  <div class="hero-content">
-    <h1 class="hero-title">Biggest Sale of the Year!</h1>
-    <p class="hero-subtitle">Up to 70% off on selected items. Limited time only.</p>
-    <a href="#products" class="cta-button">Shop Now</a>
-    
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1 class="hero-title">Biggest Sale of the Year!</h1>
+      <p class="hero-subtitle">Up to 70% off on selected items. Limited time only.</p>
+      <a href="#products" class="cta-button">Shop Now</a>
+    </div>
+  </section>
+
+  <!-- Products Section -->
+  <section id="products" class="products-section">
+    <h2>Our Featured Products</h2>
+    <div class="product-grid" id="productGrid">
+      <!-- Products will be dynamically loaded here -->
+    </div>
+  </section>
+  <!-- Cart Panel -->
+<div class="cart-panel" id="cartPanel">
+  <div class="cart-header">
+    <h3>Your Cart</h3>
+    <button id="closeCart">✖</button>
   </div>
-</section>
+  <div class="cart-items" id="cartItems">
+    <p>Your cart is empty.</p>
+  </div>
+</div>
+
 
   <script src="scripts/app.js"></script>
 </body>
